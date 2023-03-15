@@ -2,6 +2,9 @@ nav {
   align-items: center;
   background-color: rgba(30, 30, 30, 0.851);
 }
+nav .navbar-toggler-icon {
+  background-image: url(url "data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 0, 0, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 nav ul {
   align-items: center;
 }
@@ -55,7 +58,9 @@ h3 {
 h4 {
   font-family: "Alfa Slab One", cursive;
   display: flex;
-  color: rgb(225, 225, 225);
+  color: rgb(202, 202, 202);
+  justify-content: center;
+  font-size: xx-large;
 }
 
 .listapelu {
@@ -73,8 +78,88 @@ h4 {
   background-position-x: center;
 }
 
+.container-boton {
+  background-color: #323232;
+  border: 1px solid #a0a0a0;
+  position: fixed;
+  z-index: 999;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 25px;
+  padding: 25px;
+  transition: ease 0.3s;
+  animation: efecto 1.2s infinite;
+}
+
+.container-boton:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+
+.boton {
+  width: 80px;
+  transition: ease 1s;
+}
+
+@keyframes efecto {
+  0% {
+    box-shadow: 0 0 0 0 rgba(16, 188, 31, 0.85);
+  }
+  100% {
+    box-shadow: 0 0 0 25px rgba(0, 0, 0, 0);
+  }
+}
+.mapa {
+  display: flex;
+  justify-content: center;
+}
+
+.product img {
+  width: 300px;
+  height: 200px;
+}
+
+.card {
+  border-radius: 4px;
+  background-color: rgb(65, 64, 64);
+  box-shadow: 0 1px 3px rgb(255, 180, 180), 0 1px 2px rgba(0, 0, 0, 0.24);
+  align-items: center;
+}
+
+.card:hover {
+  background-color: rgb(255, 255, 255);
+  zoom: 150%;
+}
+
+.product h3 {
+  font-size: 1.7rem;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 body {
   background-color: rgba(0, 0, 0, 0.905);
+}
+
+.textoini {
+  color: rgba(224, 222, 222, 0.792);
+  align-items: center;
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  margin-top: 80px;
+  font-family: "Kanit", sans-serif;
+  margin-right: 50px;
+  margin-left: 80px;
+}
+
+.carrousel1 {
+  margin-top: 40px;
+}
+
+.gif2 {
+  margin-top: 80;
+  margin-left: 120px;
 }
 
 footer {
